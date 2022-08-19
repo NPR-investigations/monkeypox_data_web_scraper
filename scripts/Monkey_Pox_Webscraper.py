@@ -94,6 +94,8 @@ class BaseWebscraper():
         full_name = name + ".csv"        
         file_path_final = self.file_path.joinpath(full_name)
         df.to_csv(file_path_final, index = False)
+        
+        print(df)
 
     def _save_txt(self,text,name, save_folder):
         self._save_file(save_folder)
