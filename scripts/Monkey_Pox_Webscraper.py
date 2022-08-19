@@ -11,8 +11,8 @@ from tqdm import tqdm
 import requests
 import pathlib
 
-from BaseWebScraperClass import BaseWebscraper
-from MonkeyPoxDataWebsitesClass import monkeyPoxWebsites
+# from BaseWebScraperClass import BaseWebscraper
+# from MonkeyPoxDataWebsitesClass import monkeyPoxWebsites
 
 class BaseWebscraper():
     def __init__(self,url, scraper_type, data_directory):
@@ -132,5 +132,5 @@ class scrapeDosesByState(BaseWebscraper):
 
 
 
-doses_by_state = scrapeDosesByState(monkeyPoxWebsites.doses_by_state_url,"requests","../data/data_directory/")
+doses_by_state = scrapeDosesByState(monkeyPoxWebsites.doses_by_state_url,"requests","./data/")
 doses_by_state.scrape("doses_by_state", "doses_by_state_data")
