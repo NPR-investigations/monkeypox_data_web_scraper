@@ -4,7 +4,7 @@
 This repository scrapes and archives the following:
   1. [Jynneos vaccine allocation data from the U.S. Department of Health and Human Services’ (HHS) Administration for Strategic Preparedness and Response (ASPR)](https://aspr.hhs.gov/SNS/Pages/JYNNEOS-Distribution.aspx)
 
-  2.[Monkeypox case count by state from the CDC](https://www.cdc.gov/poxvirus/monkeypox/response/2022/us-map.html)
+  2. [Monkeypox case count by state from the CDC](https://www.cdc.gov/poxvirus/monkeypox/response/2022/us-map.html)
   
  ## Scraping Schedule
  The webscraper runs everyday at 2:00 p.m. EST
