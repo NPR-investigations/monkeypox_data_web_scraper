@@ -74,9 +74,9 @@ doses_by_state = scrapeDosesByState(monkeyPoxWebsites.doses_by_state_url,"reques
 doses_by_state.scrape("doses_by_state", "doses_by_state_data")
 
 # Cases by State -------------------
-cases_by_state_csv = scrapeCasesByStateCSV(monkeyPoxWebsites.cases_by_state_csv_url,"requests","./data/data_directory/")
+cases_by_state_csv = scrapeCasesByStateCSV(monkeyPoxWebsites.cases_by_state_csv_url,"requests","./data/")
 cases_by_state_csv.scrape("cases_by_state", "cases_by_state_data")
 
-cases_by_state_txt = scrapeCasesByStateText(monkeyPoxWebsites.cases_by_state_text_url,"selenium","./data/data_directory/")
+cases_by_state_txt = scrapeCasesByStateText(monkeyPoxWebsites.cases_by_state_text_url,"selenium","./data/")
 cases_by_state_txt.scrape("cases_by_state", "cases_by_state_data")
 
