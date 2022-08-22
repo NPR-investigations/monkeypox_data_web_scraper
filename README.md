@@ -1,4 +1,4 @@
-<img src="https://1000logos.net/wp-content/uploads/2021/05/NPR-logo.png" alt=”my banner”>
+![](https://github.com/NPR-investigations/monkeypox_data_web_scraper/blob/main/repo_media/NPRLogo_CMYK_Medium.jpg)
 
 # Monkey Pox Data Webscraper
 
