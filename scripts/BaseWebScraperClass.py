@@ -31,7 +31,7 @@ class BaseWebscraper():
     def _make_selenium_soup(self):
 
         chrome_options = Options()
-        #chrome_options.add_argument(f'--proxy-server=188.138.11.39')
+        chrome_options.add_argument("--headless")
         driver = webdriver.Chrome(
                 ChromeDriverManager().install(),
                 options=chrome_options
@@ -40,6 +40,10 @@ class BaseWebscraper():
         self.html = driver.page_source        
         soup = BeautifulSoup(self.html, 'html.parser')        
         return(soup)
+
+    def _get_csv(self):
+        df_csv = pd.read_csv(self.url)
+        return(df_csv)
         
 
     def _get_table(self, table_element):
@@ -100,3 +104,11 @@ class BaseWebscraper():
 
         with open(file_path_final, 'w', encoding='utf-8') as f:
             f.write(text)
+        
+
+        
+
+
+      
+    
+
