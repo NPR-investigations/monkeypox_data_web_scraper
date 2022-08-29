@@ -67,7 +67,7 @@ class BaseWebscraper():
             count = count + 1
             if len(row) > 0:
                 rows.append(row)
-        df = pd.DataFrame(rows[1:], columns = rows[0])
+        df = pd.DataFrame(rows[1:], columns = rows[0][1:])
         self.df_table = df
         return(self.df_table)
 
